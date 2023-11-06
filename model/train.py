@@ -6,7 +6,7 @@ from joblib import dump
 import pandas as pd
 import pathlib
 
-df = pd.read_csv(pathlib.Path('../data/l4d2_player_stats_final2.csv'))
+df = pd.read_csv(pathlib.Path('data/l4d2_player_stats_final2.csv'))
 # Separar las características (X) y la variable objetivo (y)
 y = df['Playtime']
 X = df.drop('Playtime', axis=1)
