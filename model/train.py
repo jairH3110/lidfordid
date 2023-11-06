@@ -20,4 +20,4 @@ clf = RandomForestRegressor(n_estimators = 10,
 clf.fit(X_train, y_train)
 print ('Saving model..')
 
-dump(clf, pathlib.Path('../model/lidfordid-disease-v1.joblib'))
+dump(clf, pathlib.Path('model/lidfordid-disease-v1.joblib'))
