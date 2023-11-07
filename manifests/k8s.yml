@@ -28,8 +28,8 @@ metadata:
   name: modeloxd-service
 spec:
   ports:
-  - port: 80
-    targetPort: 80
+  - port: 70
+    targetPort: 70
   selector:
     app: modeloxd-server
   type: LoadBalancer
