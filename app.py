@@ -12,9 +12,9 @@ app = FastAPI(title = 'prediccion de uso de pistolas respecto a horas de juego')
 
 app.add_middleware(
 CORSMiddleware,
-allow_origins=[""],
+allow_origins=["*"],
 allow_credentials=True,
-allow_methods=[""],
+allow_methods=["*"],
 allow_headers=["*"],
 )
 model = load(pathlib.Path('./model/lidfordid-disease-v1.joblib'))
